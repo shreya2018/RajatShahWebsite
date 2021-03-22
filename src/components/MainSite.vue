@@ -292,10 +292,11 @@
                 Near Thunga Hospital, Malad-West<br/>
                 Mumbai - 400064
             </div>
-            <div style="font-weight:50;margin-bottom:1em;font-size:0.75em;text-decoration:underline;cursor:pointer" @click="goToMap()">Click here to find us</div>
-            <div style="font-weight:50;margin-bottom:1em;font-size:0.75em;">For any general inquiries, please fill in the following contact form:</div>
+            <div style="margin-bottom:1em;">Mob No.:&nbsp;+91 9594178988</div>
+            <div style="font-weight:50;margin-bottom:1em;font-size:1em;text-decoration:underline;cursor:pointer" @click="goToMap()">Click here to find us</div>
+            <div style="font-weight:50;margin-bottom:1em;font-size:1em;">For any general inquiries, please fill in the following contact form:</div>
             
-            <form action="mailto:youraddr@domain.tld" method="POST" class="contact-form" enctype="text/plain" @submit="validate">
+            <form action="mailto: rajat.shah@rssa.in" method="POST" class="contact-form" enctype="text/plain" @submit="validate">
               <div style="display:flex;flex-wrap:wrap;box-sizing:content-box">
                 <div style="margin-right:1em">
                   First Name*
