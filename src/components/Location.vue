@@ -24,7 +24,7 @@ export default {
 .map-background{
     width:100vw;
     background-color: rgb(234,244,246);
-    height: 110vh;
+    height: 130vh;
     display: flex;
     justify-content: center;
     overflow-x: hidden;
@@ -32,9 +32,10 @@ export default {
 .map-location{
     color: rgb(0, 48, 91);
     position: relative;
-    top:6.5em;
+    top:4.8em;
     text-align: center;
     width: 80%;
+    font-size: 0.7em;
 }
 .mapouter{
     position:relative;

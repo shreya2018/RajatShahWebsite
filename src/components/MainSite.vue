@@ -515,6 +515,7 @@ export default {
   padding-top: 2em;
   color: #fff;
   box-sizing: border-box;
+  padding-bottom: 1.5em;
 }
 .contact-form{
   color:white;
@@ -530,6 +531,7 @@ export default {
 .submit-btn{
   color:white !important;
   width:100% !important;
+  font-size:1em !important;
 }
 .strip6{
     background-color:rgb(0, 48, 91) ;
@@ -546,6 +548,10 @@ export default {
     justify-content: space-between;
     font-weight: bold;
     color: rgb(0, 48, 91);
+    font-size:1em !important;
+}
+.v-expansion-panel-content{
+    font-weight: 100 !important;
 }
 .v-expansion-panel{
         color: rgb(0, 48, 91)  !important;

@@ -2,7 +2,7 @@
   <div id="app">
     <div class="web-site">
       <div class="menu-bar">  
-        <span style="font-size:2.5em;color:rgb(0, 48, 91);margin-left:1em;cursor:pointer" @click="goToHome()">Rajat Shah & Associates</span>
+        <span style="color:rgb(0, 48, 91);margin-left:1em;cursor:pointer" @click="goToHome()">Rajat Shah & Associates</span>
         <div style="display:flex" v-if="window.width>800">
           <div class="menu-item"><a href="/#home">Home</a></div>
           <div class="menu-item"><a href="/#about">About Us</a></div>
@@ -30,30 +30,29 @@
         <v-list-item-group
           v-model="group"
           active-class="deep-purple--text text--accent-4"
-          class="list-item-css"
         >
           <v-list-item>
-            <v-list-item-title><a href="/#home">Home</a></v-list-item-title>
+            <v-list-item-title class="list-item-css"><a href="/#home">Home</a></v-list-item-title>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-title><a href="/#about">About Us</a></v-list-item-title>
+            <v-list-item-title class="list-item-css"><a href="/#about">About Us</a></v-list-item-title>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-title><a href="/#vision">Vision</a></v-list-item-title>
+            <v-list-item-title class="list-item-css"><a href="/#vision">Vision</a></v-list-item-title>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-title><a href="/#services">Services</a></v-list-item-title>
+            <v-list-item-title class="list-item-css"><a href="/#services">Services</a></v-list-item-title>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-title><a href="/#values">Values</a></v-list-item-title>
+            <v-list-item-title class="list-item-css"><a href="/#values">Values</a></v-list-item-title>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-title><a href="/home#contact">Contact</a></v-list-item-title>
+            <v-list-item-title class="list-item-css"><a href="/#contact">Contact</a></v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -89,12 +88,7 @@ export default {
   },
 
   methods:{
-    // detectScreenWidth(){
-    //   if(screen.width>750)
-    //     return true
-    //   else
-    //     return false
-    // },
+
     handleResize() {
       this.window.width = window.innerWidth;
       this.window.height = window.innerHeight;
@@ -142,7 +136,7 @@ color: rgb(43, 43, 44);
 }
 .menu-item{
   margin-right: 1em;
-  font-size: 1.2em;
+  font-size: 0.6em;
   cursor: pointer;
 }
 .menu-item{
@@ -155,9 +149,5 @@ color: rgb(43, 43, 44);
   color:rgb(0, 48, 91) !important;
   font-size: 0.5em !important;
 }
-
-
-
-
 
 </style>
