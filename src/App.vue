@@ -2,13 +2,11 @@
   <div id="app">
     <div class="web-site">
       <div class="menu-bar">  
-        <span style="color:rgb(0, 48, 91);margin-left:1em;cursor:pointer" @click="goToHome()">Rajat Shah & Associates</span>
+        <span style="color:rgb(0, 48, 91);margin-left:1em;cursor:pointer" @click="goToHome()">Rajat S. Shah & Associates</span>
         <div style="display:flex" v-if="window.width>800">
           <div class="menu-item"><a href="/#home">Home</a></div>
           <div class="menu-item"><a href="/#about">About Us</a></div>
-          <div class="menu-item"><a href="/#vision">Vision</a></div>
           <div class="menu-item"><a href="/#services">Services</a></div>
-          <div class="menu-item"><a href="/#values">Values</a></div>
           <div class="menu-item"><a href="/#contact">Contact</a></div>
         </div>
         <div v-else>
@@ -40,15 +38,7 @@
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-title class="list-item-css"><a href="/#vision">Vision</a></v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
             <v-list-item-title class="list-item-css"><a href="/#services">Services</a></v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title class="list-item-css"><a href="/#values">Values</a></v-list-item-title>
           </v-list-item>
 
           <v-list-item>
@@ -57,7 +47,7 @@
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-      <router-view></router-view>
+      <router-view :windowWidth="window.width"></router-view>
     </div>
   </div>
 </template>
@@ -110,8 +100,8 @@ export default {
 html{
   scroll-behavior:smooth !important;
   scroll-padding-top: 80px;
-  font-family: 'Trebuchet MS';
-  font-size:32px;
+  font-family: Calibri;
+  font-size:36px !important;
 }
 a:link, a:visited{
   text-decoration: none;
