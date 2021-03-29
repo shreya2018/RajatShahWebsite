@@ -385,7 +385,7 @@ export default {
   width:100%;
   height:110vh;
   position: relative;
-  background-image: url("https://wallpapercave.com/wp/wp2164083.jpg");
+  background-image: url("../assets/intro-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -462,7 +462,7 @@ export default {
   margin: 1em;
 }
 .strip4{
-  background-image: url("https://www.clearvc.co.uk/wp-content/uploads/2018/01/video-conferencing-meeting-rooms-background.jpg");
+  background-image: url("../assets/video-conferencing-meeting.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -473,7 +473,7 @@ export default {
   display:flex;
   width:100%;
   position: relative;
-  background-image: url("https://build-amsterdam.imgix.net/upload/40ed796bdf0dc53633ddd14fd1d076b8e41f86ddc9b67c58fcba3f9318bb5859?flip=h&dl=conference-room.jpg");
+  background-image: url("../assets/conference-room.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
