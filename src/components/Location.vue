@@ -41,13 +41,12 @@ export default {
     position:relative;
     text-align:right;
     height:500px;
-    /* width:100vw; */
+
 }
 .gmap_canvas {
     overflow:hidden;
     background:none!important;
     height:500px;
-    /* width:100vw; */
 }
 
 </style>

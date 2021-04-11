@@ -1,54 +1,54 @@
 <template>
     <div class="main-site">
-      <div id="home" class="strip1 wrapper">
+      <div id="home" class="strip1 wrapper fade-in">
           
           <div  class="sub-strip1 aside aside-2">
-            <div class="strip-title"><span style="letter-spacing:0.05em;">Chartered Accountant Firm</span></div>
+            <div class="strip-title fade-in-2"><span style="letter-spacing:0.05em;">Chartered Accountant Firm</span></div>
           </div>
            <div  class="about-us main">
             </div>
       </div>
       <div id="about" class="strip5 wrapper">
         <div  class="sub-strip5">
-          <div class="strip-title5"><span style="letter-spacing:0.05em;">About Us</span></div>
+          <div class="strip-title5 fade-in"><span style="letter-spacing:0.05em;">About Us</span></div>
         </div>
-        <div  class="contact main" style="text-align:justify;text-align-last: center;">
+        <div  class="contact main about fade-in" style="text-align:left;">
            
             <div>
-                
-                CA Rajat Shah has worked with BDO India LLP for over 3 years in Transaction Advisory Services and he has demonstrated track record in Tax re-structuring, Inbound & Outbound Advisory Services, FEMA Advisory, Internal Audit, Tax Due Diligence, Valuations, Auditing & Assurance, Tax Assessments, Appeals and Assessments.
-                He worked as an articled assistant at reputed Chartered Accountants firm where he has conducted Statutory Audit, Internal Audit, Company Incorporation, RoC filings amongst others.
-                He has been part of Board of Directors of a multinational company.
-                He is accompanied by team of young  and energetic professionals.
-                
+                <span style="font-size:1.2em">Proprietor's Profile</span><br/>
+                <span style="font-size:1.2em">CA Rajat Shah</span> <br/>
+                <span style="font-size:0.8em"><v-icon size="18px" color="#fff">mdi-phone</v-icon> : 9594178988</span><br/>
+                <span style="font-size:0.8em"><v-icon size="18px" color="#fff">mdi-email</v-icon>: rajat.shah@rssa.in</span>
+
+                <ul style="margin-top:0.5em;margin-left:0.5em">
+                <li class="abt-list">He has worked with BDO India LLP for over 3 years in Transaction Advisory Services and he has demonstrated track record in Tax re-structuring, Inbound & Outbound Advisory Services, FEMA Advisory, Internal Audit, Tax Due Diligence, Valuations, Auditing & Assurance, Tax Assessments, Appeals and Assessments.</li>
+                <li class="abt-list">He worked as an articled assistant at reputed Chartered Accountants firm where he has conducted Statutory Audit, Internal Audit, Company Incorporation, RoC filings amongst others.</li>
+                <li class="abt-list">He has been part of Board of Directors of a multinational company.</li>
+                <li class="abt-list">He is accompanied by team of young  and energetic professionals.</li>
+                </ul>
+                <div style="margin-top:1em;font-size:0.8em"><a style="color:white;text-decoration:underline" :href="require('../assets/Rssa.pdf')" download="Rssa" target="_blank">Know More</a></div>
             </div>
         </div>
       </div>
-      <!-- <div id="vision" class="strip3">
-            <span class="strip3-title">Vision</span>
-            We intend to be trusted advisor of clients by constantly providing quality services to clients
-            <span class="strip3-title">Mission</span>
-            To leverage the credentials and experience of all internal stakeholders and be a partner in external stakeholders growth.<br/> To provide practical and optimum solution to our venerable clients
-      </div> -->
       <div id="vision" class="strip5 wrapper">
           <div class="sub-strip5 ">
-                <div class="strip-title5"><span style="letter-spacing:0.05em;">Vision & Mission</span></div>
+                <div class="strip-title5 fade-in"><span style="letter-spacing:0.05em;">Vision & Mission</span></div>
           </div>
-          <div class="contact main" style="text-align:justify;">
+          <div class="contact main about fade-in" style="text-align:left;">
             <ul style="margin-left:0.5em">
-          <li>We intend to be trusted advisor of clients by constantly providing quality services to clients.</li>
-          <li>To leverage the credentials and experience of all internal stakeholders and be a partner in external stakeholders growth.</li>
-          <li>To provide practical and optimum solution to our venerable clients.</li>
+          <li class="abt-list">We aim to be a client's trusted partner by consistently delivering high-quality services.</li>
+          <li class="abt-list">To leverage the credentials and experience of all internal stakeholders and be a partner in external stakeholders growth.</li>
+          <li class="abt-list">To provide our prestigious clients with a realistic and ideal solutions.</li>
             </ul>
           </div>
       </div>
       <div id="values" class="strip2 wrapper ">
           <div  class="sub-strip5" >
-          <div class="strip-title5" ><span style="letter-spacing:0.05em;">Values</span></div>
+          <div class="strip-title5 fade-in" ><span style="letter-spacing:0.05em;">Values</span></div>
           </div>
           <div class="about-us main">
             <div style="display:flex;flex-wrap:wrap;justify-content:center">
-                <div class="values" :style="[windowWidth>1007? {'width':'28%'} : {}]" >
+                <div class="values fade-in" :style="[windowWidth>1007? {'width':'28%'} : {}]" >
                 <v-btn class="mx-2 value-btn" fab dark  color="rgb(1,85,160)">
                     <v-icon dark size="75px">
                         mdi-handshake-outline
@@ -57,16 +57,7 @@
                 <span style="font-weight:bold;margin-top:0.5em;">Commitment</span><br/>
                 When we say we will do something, consider it done.
                 </div>
-                <div class="values" :style="[windowWidth>1007? {'width':'28%'} : {}]">
-                <v-btn class="mx-2 value-btn" fab dark  color="rgb(1,85,160)">
-                    <v-icon dark size="75px">
-                        mdi-check
-                    </v-icon>
-                </v-btn>
-                <span style="font-weight:bold;margin-top:0.5em;">Respect</span><br/>
-                We respect our clients, their needs and work together to reach their full potential.
-                </div>
-                <div class="values" :style="[windowWidth>1007? {'width':'28%'} : {}]">
+                <div class="values fade-in" :style="[windowWidth>1007? {'width':'28%'} : {}]">
                 <v-btn class="mx-2 value-btn" fab dark  color="rgb(1,85,160)">
                     <v-icon dark size="75px">
                         mdi-head-cog outline
@@ -75,7 +66,7 @@
                 <span style="font-weight:bold;margin-top:0.5em;">Integrity</span><br/>
                 We practice honesty and consistency in whatever we do. Our experience speaks for our adherence to our morals.
                 </div>
-                <div class="values" :style="[windowWidth>1007? {'width':'28%'} : {}]">
+                <div class="values fade-in" :style="[windowWidth>1007? {'width':'28%'} : {}]">
                 <v-btn class="mx-2 value-btn" fab dark  color="rgb(1,85,160)">
                     <v-icon dark size="75px">
                         mdi-eye-outline
@@ -84,7 +75,16 @@
                 <span style="font-weight:bold;margin-top:0.5em;">Vision</span><br/>
                 We try to recognize our clients' needs and use our intuitive prowess to provide solutions to them.
                 </div>
-                <div class="values" :style="[windowWidth>1007? {'width':'28%'} : {}]">
+                <div class="values fade-in" :style="[windowWidth>1007? {'width':'28%'} : {}]">
+                <v-btn class="mx-2 value-btn" fab dark  color="rgb(1,85,160)">
+                    <v-icon dark size="75px">
+                        mdi-check
+                    </v-icon>
+                </v-btn>
+                <span style="font-weight:bold;margin-top:0.5em;">Respect</span><br/>
+                We respect our clients, their needs and work together to reach their full potential.
+                </div>
+                <div class="values fade-in" :style="[windowWidth>1007? {'width':'28%'} : {}]">
                 <v-btn class="mx-2 value-btn" fab dark  color="rgb(1,85,160)">
                     <v-icon dark size="75px">
                         mdi-clover
@@ -98,11 +98,11 @@
       </div>
       <div id="services" class="strip5 wrapper">
         <div  class="sub-strip5 aside aside-1">
-          <div class="strip-title5"><span style="letter-spacing:0.05em;">Our Services</span></div>
+          <div class="strip-title5 fade-in"><span style="letter-spacing:0.05em;">Our Services</span></div>
         </div>
         <div  class="contact main our-services">
             <v-expansion-panels >
-                <v-expansion-panel>
+                <v-expansion-panel class="fade-in">
                     <v-expansion-panel-header expand-icon="mdi-menu-down">
                         Assurance
                     </v-expansion-panel-header>
@@ -122,7 +122,7 @@
                     </v-expansion-panel-content>
                 </v-expansion-panel>
 
-                <v-expansion-panel>
+                <v-expansion-panel class="fade-in">
                     <v-expansion-panel-header expand-icon="mdi-menu-down">
                         Direct Taxation
                     </v-expansion-panel-header>
@@ -191,7 +191,7 @@
                     </v-expansion-panel-content>
                 </v-expansion-panel>
 
-                <v-expansion-panel>
+                <v-expansion-panel class="fade-in">
                     <v-expansion-panel-header expand-icon="mdi-menu-down">
                         Transaction Advisory Services
                     </v-expansion-panel-header>
@@ -205,10 +205,12 @@
                          <li>Incorporation of Companies / LLPs</li>
                          <li>Tax Due Diligence Services</li>
                          <li>Merger implementation through NCLT process</li>
+                         <li>Project Financing</li>
+                         <li>Loan Syndication</li>
                         </ul>
                     </v-expansion-panel-content>
                 </v-expansion-panel>
-                <v-expansion-panel>
+                <v-expansion-panel class="fade-in">
                     <v-expansion-panel-header expand-icon="mdi-menu-down">
                        International Taxation
                     </v-expansion-panel-header>
@@ -223,7 +225,7 @@
                         </ul>
                     </v-expansion-panel-content>
                 </v-expansion-panel>
-                <v-expansion-panel>
+                <v-expansion-panel class="fade-in">
                     <v-expansion-panel-header expand-icon="mdi-menu-down">
                         Indirect Tax
                     </v-expansion-panel-header>
@@ -233,10 +235,11 @@
                          <li>Assistance in assessments and representations before authorities</li>
                          <li>GST Audit</li>
                          <li>Advisory on taxability of particular goods / services under GST</li>
+                         <li>Obtaining GST Refunds</li>
                         </ul>
                     </v-expansion-panel-content>
-                </v-expansion-panel>
-                <v-expansion-panel>
+                </v-expansion-panel >
+                <v-expansion-panel class="fade-in">
                     <v-expansion-panel-header expand-icon="mdi-menu-down">
                        Foreign Exchange Control Advisory & Compliance
                     </v-expansion-panel-header>
@@ -249,7 +252,7 @@
                         </ul>
                     </v-expansion-panel-content>
                 </v-expansion-panel>
-                <v-expansion-panel>
+                <v-expansion-panel class="fade-in">
                     <v-expansion-panel-header expand-icon="mdi-menu-down">
                        Companies Law Support
                     </v-expansion-panel-header>
@@ -263,7 +266,7 @@
                         </ul>
                     </v-expansion-panel-content>
                 </v-expansion-panel>
-                <v-expansion-panel>
+                <v-expansion-panel class="fade-in">
                     <v-expansion-panel-header expand-icon="mdi-menu-down">
                        Other Services
                     </v-expansion-panel-header>
@@ -274,6 +277,8 @@
                          <li>Bookkeeping and Accounting services</li>
                          <li>Payroll management services</li>
                          <li>Obtaining PAN / TAN /GST / PF / ESIC / Profession tax / Shop & Establishment registrations</li>
+                         <li>Stamp Duty Planning</li>
+                         <li>Formulation of ESOP Scheme and Effective Implementation</li>
                         </ul>
                     </v-expansion-panel-content>
                 </v-expansion-panel>
@@ -284,10 +289,13 @@
       <div class="strip4"></div>
       <div id="contact" class="strip5 wrapper">
         <div  class="sub-strip5 aside aside-1">
-          <div class="strip-title5"><span style="letter-spacing:0.05em;">Contact Us</span></div>
+          <div class="strip-title5 fade-in"><span style="letter-spacing:0.05em;">Contact Us</span></div>
         </div>
-        <div  class="contact main">
-            Our Address
+        <div  class="contact main fade-in">
+            <div style="display:flex;">
+              <v-icon dark size="30px" @click="goToMap()">mdi-map-marker</v-icon> 
+              <div @click="goToMap()">Our Address</div>
+            </div>
             <div style="margin-top:1em;margin-bottom:1em;">
                 11, Harman House, Goraswadi<br/>
                 Near Thunga Hospital, Malad-West<br/>
@@ -295,11 +303,10 @@
             </div>
             <div style="margin-bottom:1em;">Mob No.:&nbsp;+91 9594178988</div>
             <div style="margin-bottom:1em;">Email Us:&nbsp;<a style="color:white;text-decoration:underline" href="mailto:rajat.shah@rssa.in">rajat.shah@rssa.in</a> </div>
-            <div style="margin-bottom:1em;"><a style="color:white;text-decoration:underline" :href="require('../assets/Rssa.pdf')" download="Rssa" target="_blank">To know more about us, Click Here!</a></div>
-            <div style="margin-bottom:1em;font-size:1em;text-decoration:underline;cursor:pointer" @click="goToMap()">Click here to find us</div>
-            <div style="margin-bottom:1em;font-size:1em;">For any general inquiries, please fill in the following contact form:</div>
+            <div style="margin-bottom:1em;font-size:1em;">Write to us:</div>
             
-            <form action="mailto: rajat.shah@rssa.in" method="POST" class="contact-form" enctype="text/plain" @submit="validate">
+            <form name="Contact-Form" action="" method="post" data-netlify-honeypot="bot-field" class="contact-form" netlify>
+              <input type="hidden" name="form-name" value="Contact-Form" />
               <div style="display:flex;flex-wrap:wrap;box-sizing:content-box">
                 <div style="margin-right:1em">
                   First Name*
@@ -308,13 +315,15 @@
                   <v-text-field name="Last Name" :rules="[rules.name]" required outlined background-color="#ffff" v-model="profile.lastName"></v-text-field>
                   Phone No*
                   <v-text-field name="Phone No" :rules="[rules.phnumber]" required outlined background-color="#ffff" v-model="profile.phno"></v-text-field>
+                  Email*
+                  <v-text-field name="Email" :rules="[rules.email]" required outlined background-color="#ffff" v-model="profile.email"></v-text-field>                
                 </div>
                 <div>
                   Message*
-                  <v-textarea name="Message" required outlined background-color="#ffff" height="17.3em" v-model="profile.message"></v-textarea>
+                  <v-textarea name="Message" required outlined background-color="#ffff" :height="[windowWidth>971? '24.3em' : '13em']" v-model="profile.message"></v-textarea>
                 </div>
               </div>
-              <v-btn type="submit" class="submit-btn"  tile >Sumbit</v-btn>
+              <v-btn type="submit" class="submit-btn" tile :onsubmit="validate" >Submit</v-btn>
             </form>
             
         </div>
@@ -329,10 +338,9 @@ export default {
     data(){
         return{
             accordion:false,
-            profile:{firstName:null,lastName:null,phno:null,message:null},
+            profile:{firstName:null,lastName:null,phno:null,email:null,message:null},
             error:[],
             rules: {
-                required: value => !!value || 'Required.',
                 phnumber: value => {
                     const pattern = /[0-9]$/
                     return (pattern.test(value)&&value.length==10) || 'Invalid Phone number.'
@@ -340,19 +348,48 @@ export default {
                 name: value =>{
                     const pattern = /[A-Za-z]$/
                     return (pattern.test(value)) || 'Invalid Name.'
+                },
+                email: value =>{
+                    const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                    return pattern.test(value) || 'Invalid e-mail.'
                 }
             },
+            fadeInElements:[]
         }
     },
+    mounted(){
+      this.fadeInElements = Array.from(document.getElementsByClassName('fade-in'))
+      document.addEventListener('scroll', this.handleScroll)
+      this.handleScroll();
+    },
+    beforeDestroy(){
+      document.removeEventListener('scroll', this.handleScroll)
+    },
     methods:{
+    handleScroll () {
+      for (var i = 0; i < this.fadeInElements.length; i++) {
+        var elem = this.fadeInElements[i];
+        if (this.isElemVisible(elem)) {
+          elem.style.opacity = '1'
+          elem.style.transform = 'scale(1)'
+          this.fadeInElements.splice(i, 1) // only allow it to run once
+        }
+      }
+    },
+    isElemVisible(el) {
+      var rect = el.getBoundingClientRect()
+      var elemTop = rect.top + 200 // 200 = buffer
+      var elemBottom = rect.bottom
+      return elemTop < window.innerHeight && elemBottom >= 0
+    },
     goToMap(){
-      let routeData = this.$router.resolve({name:'Location'});
-      window.open(routeData.href, '_blank');
+      this.$router.push({name:'Location'});
     },
     validate:function (e) {
         const pattern1 = /[0-9]$/
         const pattern2 = /[A-Za-z]$/
-        if(pattern1.test(this.profile.phno)&&pattern2.test(this.profile.firstName)&&pattern2.test(this.profile.lastName))
+        const pattern3 = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        if(pattern1.test(this.profile.phno)&&pattern2.test(this.profile.firstName)&&pattern2.test(this.profile.lastName)&&pattern3.test(this.profile.email))
             return true;
         e.preventDefault();
       },
@@ -400,13 +437,12 @@ export default {
   display:flex;
   align-items: center;
   justify-content: center;
-  /* opacity: 0.65; */
+  padding-right:1em;
+  padding-left:1em;
 }
 .strip-title{
   font-size: 1.5em;
   color: rgb(255, 255, 255);
-  margin-left: 1em;
-  opacity: 1;
 }
 .strip2{
   display:flex;
@@ -414,35 +450,25 @@ export default {
   position: relative;
 }
 
-.sub-strip2{
-  position:relative;
-  top:0;
-  left:0;
-  background-color: rgb(234,244,246);
-  display:flex;
-  align-items: flex-start;
-  justify-content: center;
-
-}
-.strip-title2{
-  font-size: 1em;
-  color: rgb(1,85,160);
-  margin-left: 1em;
-  padding-top:1.5em;
-  padding-bottom: 1.5em;
-}
 .about-us{
   display: flex;
   align-items: center;
   justify-content: flex-start;
   position: relative;
   font-size: 0.5em;
-  /* font-weight: 100; */
   color:  rgb(0, 48, 91);
   text-align: left;
   padding:1.5em;
   box-sizing: border-box;
   line-height: 1.5;
+}
+
+.about{
+  padding-left: 2.5em !important;
+  padding-right: 2.5em !important;
+}
+.abt-list{
+  margin-bottom:1em;
 }
 
 .strip3{
@@ -509,12 +535,11 @@ export default {
   display:flex;
   align-items: center;
   justify-content: center;
-  /* opacity: 0.65; */
 }
 .strip-title5{
   font-size: 1em;
   color: rgb(255, 255, 255);
-  margin-left: 1em;
+  margin: auto;
   padding-top:1.5em;
   padding-bottom: 1.5em;
 }
@@ -524,12 +549,12 @@ export default {
   font-size: 0.7em;
   background-color: rgba(25,118,210,0.52);
   text-align: left;
-  /* opacity: 0.85; */
   padding-left: 1em;
   padding-top: 2em;
   color: #fff;
   box-sizing: border-box;
   padding-bottom: 1.5em;
+  padding-right: 1em;
 }
 .contact-form{
   color:white;
@@ -539,16 +564,24 @@ export default {
   background-color: rgb(12, 38, 107); 
 }
 .v-input__slot{
-  width: 20em !important;
+  width: 18em!important;
   opacity:1;
+  margin-right:1em;
 }
 .v-messages{
   color:red !important;
   font-size: 16px !important;
 }
+#input-82{
+  line-height: 1.5 !important;
+}
+
+#input-83{
+  line-height: 1.5 !important;
+}
 .submit-btn{
   color:white !important;
-  width:100% !important;
+  width:90% !important;
   font-size:1em !important;
   background-color: rgb(1,85,160) !important;
   border: 1px solid white;
@@ -569,10 +602,12 @@ export default {
     font-weight: bold;
     color: rgb(0, 48, 91);
     font-size:1.2em !important;
+    text-align: left;
 }
 .v-expansion-panel-content{
     font-weight: 500 !important;
     font-size:0.888em;
+    margin-left: 1em;
 }
 .v-expansion-panel{
         color: rgb(0, 48, 91)  !important;
@@ -582,6 +617,19 @@ export default {
 .v-expansion-panels{
   z-index:0;
 }
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in{
+    opacity: 0;
+    transition: 0.3s all linear;
+}
+
+.fade-in-2{
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in  forwards;
+}
+
 @media all and (min-width: 600px) {
   .aside { flex: 1 0 0; }
 }
@@ -591,8 +639,9 @@ export default {
   .aside-1 { order: 1; } 
   .main    { order: 2; }
   .aside-2 { order: 2; }
-  .sub-strip121 {order: 1;}
-  .sub-strip122 {order: 3;}
-  
+}
+
+@media (max-width: 600px){
+  .main-site { font-size: 30px; }
 }
 </style>

@@ -2,12 +2,12 @@
   <div id="app">
     <div class="web-site">
       <div class="menu-bar">  
-        <span style="color:rgb(0, 48, 91);margin-left:1em;cursor:pointer" @click="goToHome()">Rajat S. Shah & Associates</span>
+        <span style="margin-left:1em;cursor:pointer"><a style="color:rgb(0, 48, 91)" href="/#home">Rajat S. Shah & Associates</a></span>
         <div style="display:flex" v-if="window.width>800">
-          <div class="menu-item"><a href="/#home">Home</a></div>
-          <div class="menu-item"><a href="/#about">About Us</a></div>
-          <div class="menu-item"><a href="/#services">Services</a></div>
-          <div class="menu-item"><a href="/#contact">Contact</a></div>
+          <a href="/#home"><div class="menu-item">Home</div></a>
+          <a href="/#about"><div class="menu-item">About Us</div></a>
+          <a href="/#services"><div class="menu-item">Services</div></a>
+          <a href="/#contact"><div class="menu-item">Contact</div></a>
         </div>
         <div v-else>
             <v-icon  @click.stop="drawer = !drawer" style="margin-right:1em">
@@ -29,21 +29,26 @@
           v-model="group"
           active-class="deep-purple--text text--accent-4"
         >
+        <a href="/#home">
           <v-list-item>
-            <v-list-item-title class="list-item-css"><a href="/#home">Home</a></v-list-item-title>
+            <v-list-item-title class="list-item-css">Home</v-list-item-title>
           </v-list-item>
-
+        </a>
+        <a href="/#about">
           <v-list-item>
-            <v-list-item-title class="list-item-css"><a href="/#about">About Us</a></v-list-item-title>
+            <v-list-item-title class="list-item-css">About Us</v-list-item-title>
           </v-list-item>
-
+        </a>
+        <a href="/#services">
           <v-list-item>
-            <v-list-item-title class="list-item-css"><a href="/#services">Services</a></v-list-item-title>
+            <v-list-item-title class="list-item-css">Services</v-list-item-title>
           </v-list-item>
-
+        </a>
+        <a href="/#contact">
           <v-list-item>
-            <v-list-item-title class="list-item-css"><a href="/#contact">Contact</a></v-list-item-title>
+            <v-list-item-title class="list-item-css">Contact</v-list-item-title>
           </v-list-item>
+        </a>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
